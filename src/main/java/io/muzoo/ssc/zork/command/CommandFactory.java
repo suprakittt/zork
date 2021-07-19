@@ -1,4 +1,4 @@
-package io.muzoo.ssc.zork;
+package io.muzoo.ssc.zork.command;
 import io.muzoo.ssc.zork.command.Command;
 import io.muzoo.ssc.zork.command.ExitCommand;
 

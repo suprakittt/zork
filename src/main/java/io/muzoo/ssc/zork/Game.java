@@ -1,5 +1,6 @@
 package io.muzoo.ssc.zork;
 import io.muzoo.ssc.zork.command.Command;
+import io.muzoo.ssc.zork.command.CommandFactory;
 
 import java.util.List;
 import java.util.Scanner;
