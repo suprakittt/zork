@@ -8,12 +8,12 @@ import io.muzoo.ssc.zork.World;
 import java.util.List;
 
 public class ExitCommand implements Command {
-    String exitText =
+    String exit =
             "========================\n"
                     + "  Thank you for playing, BYE!!!\n"
                     + "========================";
 
-    String errorText =
+    String error =
             "==============================\n"
                     + "Can't use this command\n"
                     + "==============================\n";
@@ -36,10 +36,10 @@ public class ExitCommand implements Command {
     @Override
     public void execute(final String[] args, final Main.Status state, Player player, World world) {
         if (state.equals(Main.Status.MENU)) {
-            System.out.println(exitText);
+            System.out.println(exit);
             System.exit(0);
         } else {
-            System.out.println(errorText);
+            System.out.println(error);
         }
     }
 }

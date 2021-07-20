@@ -2,7 +2,7 @@ package io.muzoo.ssc.zork;
 
 public class Itemuse {
 
-    private String name = "Default name";
+    private String name = "Default";
 
     private int damage = 0;
 
@@ -10,17 +10,14 @@ public class Itemuse {
 
     }
 
-    public String name() {
-        return this.name;
-    }
+    public String name() { return this.name; }
 
-
-    public Itemuse name(final String newName) {
-        this.name = newName;
+    public Itemuse name(final String xName) {
+        this.name = xName;
         return this;
     }
 
-   // attack damage
+    // damage
     public int attack() {
         return this.damage;
     }

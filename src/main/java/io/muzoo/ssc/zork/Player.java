@@ -25,6 +25,29 @@ public class Player {
         this.death = Main.Status.PLAYING;
         this.inventory = new ArrayList<>();
     }
+    public void addItem(final Itemuse item) {
+        this.inventory.add(item);
+    }
+
+    public void deleteItem(final Itemuse item) {
+        this.inventory.remove(item);
+    }
+
+    public List<Itemuse> showInventory() {
+        return this.inventory;
+    }
+
+    public int getHp() {
+        return this.hp;
+    }
+
+    public int getMaxHp() {
+        return this.maxHp;
+    }
+
+    public Main.Status getStatus() {
+        return this.death;
+    }
 }
 
 

@@ -1,4 +1,4 @@
 package io.muzoo.ssc.zork.map;
 
-public class Map {
+public class Map<S> {
 }

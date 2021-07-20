@@ -43,7 +43,7 @@ public class HelpCommand implements Command {
     }
 
     @Override
-    public void execute(final String[] args, final Main.Status state, Player player, World world) {
+    public void execute(String[] args,  Main.Status state, Player player, World world) {
         System.out.print(helpText);
     }
 }
