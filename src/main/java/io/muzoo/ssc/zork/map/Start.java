@@ -8,7 +8,7 @@ import io.muzoo.ssc.zork.weapon.Knife;
 public class Start extends Map<Stateless> {
     public Start(final World world){
         super(world);
-        this.title("New Room")
+        this.title("Starting Room")
                 .addItem(new Gun())
                 .addItem(new Knife());
 
