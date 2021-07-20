@@ -2,6 +2,8 @@ package io.muzoo.ssc.zork.command;
 
 import io.muzoo.ssc.zork.Game;
 import io.muzoo.ssc.zork.Main;
+import io.muzoo.ssc.zork.Player;
+import io.muzoo.ssc.zork.World;
 
 import java.util.List;
 
@@ -41,7 +43,7 @@ public class HelpCommand implements Command {
     }
 
     @Override
-    public void execute(Game game, List<String> args) {
+    public void execute(final String[] args, final Main.Status state, Player player, World world) {
         System.out.print(helpText);
     }
 }
